@@ -33,13 +33,10 @@ def DeleteRecord(path):
     fl = open(path, "w+")
     uid = int(input("Please enter UID of a record you'd like to delete: "))
     for lines in fl:
-        if (lines[0:2] == uid):
-            print(lines)
+        print(lines)
     
 
-
-
-path = "/Users/Kacper/Documents/Repos/Python_UO_UAM/File_editon/test.csv"
+path = "/Users/kacper.szczepanek/Documents/Python/Python_UO_UAM/File_editon/test.csv"
 
 OpenFile(path)
 ViewFile(path)
